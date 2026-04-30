@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Beth-El Community Church | Welcome Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <style>
+            /* Hero Background Image */
+            .hero-bg {
+                background-image:
+                    linear-gradient(
+                        135deg,
+                        rgba(201, 169, 98, 0.2) 0%,
+                        rgba(0, 0, 0, 0.4) 100%
+                    ),
+                    url("img/bethel.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+            [data-theme="dark"] .hero-bg {
+                background-image:
+                    linear-gradient(
+                        135deg,
+                        rgba(201, 169, 98, 0.25) 0%,
+                        rgba(0, 0, 0, 0.6) 100%
+                    ),
+                    url("img/bethel.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Theme Toggle & Scroll to Top -->
+        <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+        >
+            <span class="sun-icon">☀</span>
+            <span class="moon-icon">☾</span>
+        </button>
+
+        <button
+            class="scroll-to-top"
+            id="scrollToTop"
+            aria-label="Scroll to top"
+        >
+            ↑
+        </button>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a href="#" class="logo">BETH-EL</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#kids">Kids</a></li>
+                    <li><a href="#sermons">Sermons</a></li>
+                    <li><a href="#give">Give</a></li>
+                    <li>
+                        <a href="#" class="contact-btn" id="navContactBtn"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-bg">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">WELCOME</span>
+                    <span class="title-line accent">HOME</span>
+                </h1>
+                <p class="hero-subtitle">A church where everyone is welcomed</p>
+                <div class="hero-cta">
+                    <a href="#events" class="btn btn-primary"
+                        >Join Us This Sunday</a
+                    >
+                    <a href="#sermons" class="btn btn-secondary"
+                        >Watch Online</a
+                    >
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="scroll-line"></div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <span class="section-label">Our Story</span>
+                        <h2 class="section-title">
+                            THE BETH-EL<br /><span class="accent"
+                                >COMMUNITY</span
+                            >
+                        </h2>
+                        <p class="about-text">
+                            We are a diverse community of believers united by
+                            faith, hope, and love. At Beth-El, you'll find a
+                            place where questions are welcomed, where faith is
+                            lived out in real ways, and where everyone belongs.
+                        </p>
+                        <p class="about-text">
+                            Our mission is simple: Make faith accessible, build
+                            genuine community, and serve our neighbors with
+                            compassion.
+                        </p>
+                        <a href="#contact" class="btn btn-outline"
+                            >Learn More</a
+                        >
+                    </div>
+                    <div class="about-image">
+                        <img
+                            src="img/about.jpg"
+                            alt="Beth-El Community Church Congregation"
+                            class="about-img"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Scripture -->
+        <section class="scripture-section">
+            <div class="container">
+                <div class="scripture-card">
+                    <span class="scripture-label">Daily Scripture</span>
+                    <blockquote class="scripture-text">
+                        "For I know the plans I have for you," declares the
+                        Lord, "plans to prosper you and not to harm you, to give
+                        you hope and a future."
+                    </blockquote>
+                    <cite class="scripture-reference">— Jeremiah 29:11</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="events-section">
+            <div class="container">
+                <span class="section-label">Upcoming</span>
+                <h2 class="section-title">EVENTS</h2>
+                <div class="events-grid">
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="day">SUN</span>
+                            <span class="number">10</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Sunday Worship Service</h3>
+                            <p>Join us for worship, prayer, and community</p>
+                            <span class="event-time">9:00 AM & 11:00 AM</span>
+                        </div>
+                        <a href="#" class="btn btn-event">Join Us</a>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="day">WED</span>
+                            <span class="number">13</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Midweek Bible Study</h3>
+                            <p>Deep dive into Scripture together</p>
+                            <span class="event-time">7:00 PM</span>
+                        </div>
+                        <a href="#" class="btn btn-event">Join Us</a>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="day">SUN</span>
+                            <span class="number">17</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Community Outreach</h3>
+                            <p>Serving our neighbors in need</p>
+                            <span class="event-time">2:00 PM</span>
+                        </div>
+                        <a href="#" class="btn btn-event">Join Us</a>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="day">FRI</span>
+                            <span class="number">22</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Youth Night</h3>
+                            <p>Games, music, and fellowship</p>
+                            <span class="event-time">6:30 PM</span>
+                        </div>
+                        <a href="#" class="btn btn-event">Join Us</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kids & Youth Ministry Section -->
+        <section id="kids" class="kids-section">
+            <div class="container">
+                <div class="kids-grid">
+                    <div class="kids-image">
+                        <img
+                            src="img/kids&amp;Youth.jpg"
+                            alt="Kids Ministry"
+                            class="kids-img"
+                        />
+                    </div>
+                    <div class="kids-content">
+                        <span class="section-label">Next Generation</span>
+                        <h2 class="section-title">
+                            KIDS &<br /><span class="accent">YOUTH</span>
+                        </h2>
+                        <p class="kids-text">
+                            We love raising up the next generation of faith
+                            leaders. Our Kids and Youth ministries provide a
+                            safe, fun, and faith-filled environment for your
+                            children and teens.
+                        </p>
+                        <div class="kids-programs">
+                            <div class="program-item">
+                                <strong>Little Lights</strong>
+                                <span>Ages 3-7 • Sundays 9:00 AM</span>
+                            </div>
+                            <div class="program-item">
+                                <strong>Impact Kids</strong>
+                                <span>Ages 8-12 • Sundays 9:00 AM</span>
+                            </div>
+                            <div class="program-item">
+                                <strong>Youth Night</strong>
+                                <span>Ages 13-18 • Fridays 6:30 PM</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-outline"
+                            >Register Your Child</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect Section -->
+        <section id="connect" class="connect-section">
+            <div class="container">
+                <span class="section-label">Community</span>
+                <h2 class="section-title">
+                    WAYS TO<br /><span class="accent">CONNECT</span>
+                </h2>
+                <div class="connect-grid">
+                    <div class="connect-card">
+                        <div class="connect-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3>Small Groups</h3>
+                        <p>
+                            Grow in faith together through weekly gatherings in
+                            homes across the city.
+                        </p>
+                        <a
+                            href="https://api.whatsapp.com/send/?phone=265887137368&text=I%20would%20like%20to%20join%20a%20Small%20Group"
+                            class="link-btn"
+                            >Find a Group →</a
+                        >
+                    </div>
+                    <div class="connect-card">
+                        <div class="connect-icon">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Volunteer</h3>
+                        <p>
+                            Discover your purpose by serving in one of our many
+                            ministry teams.
+                        </p>
+                        <a
+                            href="https://api.whatsapp.com/send/?phone=265887137368&text=I%20would%20like%20to%20volunteer"
+                            class="link-btn"
+                            >Join a Team →</a
+                        >
+                    </div>
+                    <div class="connect-card">
+                        <div class="connect-icon">
+                            <i class="fa-solid fa-pray"></i>
+                        </div>
+                        <h3>Prayer</h3>
+                        <p>
+                            Submit a prayer request and let our team stand with
+                            you in faith.
+                        </p>
+                        <button
+                            id="prayerRequestBtn"
+                            class="link-btn"
+                            style="
+                                background: none;
+                                border: none;
+                                cursor: pointer;
+                                padding: 0;
+                            "
+                        >
+                            Request Prayer →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prayer Verse Modal -->
+        <div class="prayer-modal" id="prayerModal">
+            <div class="prayer-modal-content">
+                <button class="prayer-modal-close" id="prayerModalClose">
+                    &times;
+                </button>
+                <div class="prayer-verse-container">
+                    <span class="section-label">A Verse for You</span>
+                    <blockquote
+                        id="prayerVerse"
+                        class="prayer-verse-text"
+                    ></blockquote>
+                    <cite id="prayerReference" class="prayer-verse-ref"></cite>
+                    <p class="prayer-prompt">
+                        We would love to stand in faith with you. How can we
+                        pray for you today?
+                    </p>
+                    <button class="btn btn-primary" id="prayerNextBtn">
+                        Submit Prayer Request
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sermons/Media Section -->
+
+        <section id="sermons" class="sermons-section">
+            <div class="container">
+                <span class="section-label">Archive</span>
+                <h2 class="section-title">
+                    RECORDED<br /><span class="accent">SERVICES</span>
+                </h2>
+                <div class="sermons-grid">
+                    <article class="sermon-card">
+                        <div class="sermon-video">
+                            <iframe
+                                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D1GSngkvqnr&show_text=0&width=560"
+                                width="100%"
+                                height="100%"
+                                style="border: none; overflow: hidden"
+                                scrolling="no"
+                                frameborder="0"
+                                allowfullscreen="true"
+                                allow="
+                                    autoplay;
+                                    clipboard-write;
+                                    encrypted-media;
+                                    picture-in-picture;
+                                    web-share;
+                                "
+                                allowfullscreen="true"
+                            ></iframe>
+                        </div>
+                        <div class="sermon-info">
+                            <h3>Faith in Uncertain Times</h3>
+                            <p>Pastor John Mitchell • April 20, 2025</p>
+                        </div>
+                    </article>
+                    <article class="sermon-card">
+                        <div class="sermon-video">
+                            <iframe
+                                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D1GSngkvqnr&show_text=0&width=560"
+                                width="100%"
+                                height="100%"
+                                style="border: none; overflow: hidden"
+                                scrolling="no"
+                                frameborder="0"
+                                allowfullscreen="true"
+                                allow="
+                                    autoplay;
+                                    clipboard-write;
+                                    encrypted-media;
+                                    picture-in-picture;
+                                    web-share;
+                                "
+                                allowfullscreen="true"
+                            ></iframe>
+                        </div>
+                        <div class="sermon-info">
+                            <h3>The Power of Community</h3>
+                            <p>Pastor Sarah Johnson • April 13, 2025</p>
+                        </div>
+                    </article>
+                    <article class="sermon-card">
+                        <div class="sermon-video">
+                            <iframe
+                                src="https://www.facebook.com/plugins/video.php?href=https://web.facebook.com/share/v/17SpW5hnr3/&show_text=0&width=560"
+                                width="100%"
+                                height="100%"
+                                style="border: none; overflow: hidden"
+                                scrolling="no"
+                                frameborder="0"
+                                allowfullscreen="true"
+                                allow="
+                                    autoplay;
+                                    clipboard-write;
+                                    encrypted-media;
+                                    picture-in-picture;
+                                    web-share;
+                                "
+                                allowfullscreen="true"
+                            ></iframe>
+                        </div>
+                        <div class="sermon-info">
+                            <h3>Walking in Hope</h3>
+                            <p>Pastor John Mitchell • April 6, 2025</p>
+                        </div>
+                    </article>
+                </div>
+
+                <a href="#" class="btn btn-outline view-all"
+                    >View All Sermons</a
+                >
+            </div>
+        </section>
+
+        <!-- Giving Section -->
+        <section id="give" class="giving-section">
+            <div class="container">
+                <div class="giving-content">
+                    <span class="section-label">Giving</span>
+                    <h2 class="section-title light">
+                        GENEROSITY<br /><span class="accent"
+                            >CHANGES LIVES</span
+                        >
+                    </h2>
+                    <p class="giving-text">
+                        Your tithes and offerings support our mission to spread
+                        faith, hope, and love throughout our community and
+                        beyond. Every gift makes a difference.
+                    </p>
+                    <div class="giving-options">
+                        <a href="#" class="btn btn-primary btn-give"
+                            >Give Online</a
+                        >
+                        <a href="#" class="btn btn-outline btn-give"
+                            >Text to Give</a
+                        >
+                    </div>
+                    <p class="giving-note">
+                        Secure giving powered by trusted providers
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title">
+                    WE'D LOVE TO<br /><span class="accent">HEAR FROM YOU</span>
+                </h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="prayer">Prayer Request</option>
+                            <option value="visit">Plan a Visit</option>
+                            <option value="volunteer">Volunteer</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <span class="footer-logo">BETH-EL</span>
+                        <p class="footer-tagline">
+                            A church where everyone is welcomed
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#sermons">Sermons</a></li>
+                            <li><a href="#give">Giving</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <address>
+                            <p>NRC</p>
+                            <p>Lilongwe, Malawi</p>
+                            <p>
+                                <a href="tel:+1234567890">(+265)887-13-73-68</a>
+                            </p>
+                            <p>
+                                <a href="mailto:hello@beth-el.church"
+                                    >hello@beth-el.church</a
+                                >
+                            </p>
+                        </address>
+                    </div>
+                    <div class="footer-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a
+                                href="https://web.facebook.com/people/BethEL-Community-Church/61576763002754/?rdid=vMEzx9dLRgXvGLk1&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F15bHkmSC4C%2F%3F_rdc%3D1%26_rdr"
+                                class="facebook"
+                                ><i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a
+                                href="https://api.whatsapp.com/send/?phone=265887137368&text&type=phone_number&app_absent=0"
+                                class="whatsapp"
+                                ><i class="fa-brands fa-whatsapp"></i
+                            ></a>
+                            <a
+                                href="https://www.youtube.com/@somebodycaresmalawi"
+                                class="youtube"
+                                ><i class="fa-brands fa-youtube"></i
+                            ></a>
+                            <a
+                                href="https://www.tiktok.com/@bethelcommunitychurch"
+                                class="tiktok"
+                                ><i class="fa-brands fa-tiktok"></i
+                            ></a>
+                            <a
+                                href="https://open.spotify.com/show/3FbSIbpOQgHDzTn0GFxXGF?si=I_2P-fRfQs6wBXK4kVSLIQ&nd=1&dlsi=26a1165f568e4e98"
+                                class="spotify"
+                                ><i class="fa-brands fa-spotify"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>
+                        &copy; 2025 Beth-El Community Church. All rights
+                        reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Contact Overlay (Full Screen) -->
+        <div class="contact-overlay" id="contactOverlay">
+            <button class="overlay-close" id="overlayClose" aria-label="Close">
+                &times;
+            </button>
+            <div class="overlay-content">
+                <h2>Get in Touch</h2>
+                <p>
+                    Have a prayer request or want to learn more? We're here for
+                    you.
+                </p>
+                <form class="overlay-form">
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <textarea
+                        placeholder="Your Message or Prayer Request"
+                        rows="5"
+                        required
+                    ></textarea>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
